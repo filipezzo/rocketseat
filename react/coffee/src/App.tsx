@@ -1,7 +1,12 @@
+import { CoffeeProvider } from "./app/contexts/CoffeeProvider";
 import { Router } from "./app/router/Router";
 
 function App() {
-	return <Router />;
+	return (
+		<CoffeeProvider>
+			<Router />
+		</CoffeeProvider>
+	);
 }
 
 export default App;
