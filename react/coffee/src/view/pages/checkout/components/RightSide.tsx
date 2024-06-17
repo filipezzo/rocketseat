@@ -1,7 +1,11 @@
 import { useCoffee } from "../../../../app/hooks/useCoffee";
 import { SelectedItem } from "./SelectedItem";
 
-export function RightSide() {
+interface Props {
+	onSubmit(): void;
+}
+
+export function RightSide({ onSubmit }: Props) {
 	const { selectedCoffees, totalCoffeesCost } = useCoffee();
 	const totalWithTaxes = totalCoffeesCost + 3.5;
 
@@ -51,7 +55,10 @@ export function RightSide() {
 						</span>
 					</div>
 				</div>
-				<button className="h-[46px] w-full rounded-md bg-yellowv text-center font-medium uppercase text-white shadow-sm transition-opacity hover:opacity-80">
+				<button
+					onClick={onSubmit}
+					className="h-[46px] w-full rounded-md bg-yellowv text-center font-medium uppercase text-white shadow-sm transition-opacity hover:opacity-80"
+				>
 					confirmar pedido
 				</button>
 			</div>
