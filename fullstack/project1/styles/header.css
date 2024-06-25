@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  height: 80px;
+  line-height: 0;
+}
+
+.header_nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font: var(--text);
+  padding-block: 8px;
+  text-wrap: nowrap;
+}
+
+.header_nav ul li:first-child {
+  padding-block: 4px 0px;
+}
+@media (width >= 640px) {
+  .hide {
+    display: block;
+  }
+
+  .header_nav ul {
+    gap: 24px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
