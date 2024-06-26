@@ -1,0 +1,79 @@
+@import url(./globals.css);
+
+.heading {
+  font: bold 16px/21.79px var(--fm);
+  text-transform: uppercase;
+  color: var(--text-headline);
+  margin-bottom: 8px;
+}
+
+.title {
+  font: var(--h3);
+}
+
+.banner {
+  margin-block: 40px;
+}
+
+.first-img {
+  height: 340px;
+  margin-bottom: 24px;
+}
+
+.second-img {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  color: var(--text-secondary);
+  font: var(--subtitle);
+}
+
+.paragraph {
+  margin-block: 12px 40px;
+  line-height: 21.79px;
+  font: var(--paragraph);
+  color: var(--text-secondary);
+  width: 100%;
+}
+
+.ol-list li {
+  margin-left: 40px;
+}
+
+.ol-paragraph {
+  margin-block: 12px 24px;
+}
+
+.blue {
+  color: var(--accent-blue);
+  font: var(--headline);
+}
+
+.purple {
+  color: var(--accent-purple);
+  font: var(--headline);
+}
+
+.red {
+  color: var(--accent-pink);
+  font: var(--headline);
+}
+
+.orange {
+  color: var(--accent-orange);
+  font: var(--headline);
+}
+
+@media (width >= 640px) {
+  .first-img {
+    height: 660px;
+    height: auto;
+  }
+
+  .paragraph {
+    margin-block: 12px 64px;
+  }
+}
