@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color-light: #60a5fa;
+  --brand-color-dark: #1d4ed8;
+  --bg-color: #0f172a;
+  --stroke-color: #1e293b;
+  --font-family: "Archivo", sans-serif;
+  --text-color-primary: #f1f5f9;
+  --text-color-secondary: #cbd5e1;
+
+  --heading1: 800 24px/135% var(--font-family);
+  --heading2: 800 16px/140% var(--font-family);
+  --heading3: 800 14px/140% var(--font-family);
+  --heading4: 800 12px/140% var(--font-family);
+  --span: 600 14px/145% var(--font-family);
+  --paragraph: 400 14px/160% var(--font-family);
+  --text: 400 16px/140% var(--font-family);
+  --text-sm: 400 12px/140% var(--font-family);
+}
+
+body {
+  color: var(--text-color-primary);
+  background: var(--bg-color);
+  font: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:where(:hover, :focus) {
+  color: var(--brand-color-light);
+  transition: 0.3s all ease-out;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (width >= 720px) {
+  .hide {
+    display: block;
+  }
+}

@@ -1,0 +1,45 @@
+#weekly {
+  border-top: 1px solid var(--stroke-color);
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 24px;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    figure {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      position: relative;
+      img {
+        height: 160px;
+      }
+      .badge {
+        position: absolute;
+        top: 0;
+        margin: 8px;
+      }
+    }
+  }
+}
+
+@media (width >= 720px) {
+  #weekly {
+    section {
+      flex-wrap: nowrap;
+    }
+  }
+}
