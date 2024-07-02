@@ -1,0 +1,49 @@
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1366px;
+  margin-inline: auto;
+  padding: 24px;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.heading2 {
+  color: var(--gray-500);
+  font: var(--subtitle);
+}
+
+.heading1 {
+  margin-block: 8px 20px;
+  color: var(--gray-600);
+  font: var(--title-md);
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  background-color: var(--gray-300);
+  color: red;
+  span {
+    color: var(--gray-500);
+    font: var(--text-md);
+  }
+}
+
+@media (width >= 720px) {
+  .heading1 {
+    font: var(--title-lg);
+  }
+
+  .container {
+    padding: 0px;
+  }
+}
