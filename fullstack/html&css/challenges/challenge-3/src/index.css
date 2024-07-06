@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .lucky {
+    font:
+      400 40px "Leckerli One",
+      cursive;
+  }
+
+  .baloo-md {
+    font:
+      700 28px "Baloo 2",
+      sans-serif,
+      sans-serif;
+  }
+
+  .baloo-sm {
+    font:
+      700 18px "Baloo 2",
+      sans-serif;
+  }
+
+  .body-md {
+    font:
+      500 16px "Open Sans",
+      sans-serif;
+  }
+
+  .body-sm {
+    font:
+      500 14px "Open Sans",
+      sans-serif;
+  }
+
+  .body-xs {
+    font:
+      500 14px "Open Sans",
+      sans-serif;
+  }
+}
+
+
+
+
+.flex {
+  display: flex;
+}
